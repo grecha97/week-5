@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(14, 99, 94);
+}
+
+/*Header --------------->*/
+
+.header {
+    width: 100%;
+    height: 11rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 8%;
+    box-shadow: 0 5px 10px rgb(14, 99, 94.8);
+}
+
+.header .logo {
+    width: 10rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+    padding: 0 1rem;
+}
+
+nav ul li a {
+    color: rgb(14, 99, 94);
+    font-size: 1.7rem;
+    padding: .8rem;
+}
+
+nav ul li a:hover {
+    background-color: rgba(58, 58, 75, 0.244);
+    border-radius: 10px;
+}
+
+/*main section ------------------------>*/
+
+.home-section {
+    width: 100%;
+    padding: 15rem 5rem 5rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;    
+}
+
+.home-section.left {
+    padding: 1rem 3rem;
+}
+
+.home-section .left > .title-text h2 {
+    font-size: 4rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.home-section .left .image {
+    width: 100%;
+    height: 40rem;
+}
+
+.home-section .left .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-section .left .content {
+    padding: 1rem 1.5rem 1rem;
+}
+
+.home-section .left .content h3 a {
+    color: rgb(14, 99, 94);
+}
+
+.home-section .left .content .title h3 {
+    font-size: 2rem;
+}
+
+.home-section .left .content .title h3:hover {
+    text-decoration: underline;
+}
+
+.home-section .left .content .description {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: grey
+}
+
+.textcols {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.textcols-item {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+	flex: 1;
+	height: 50%;
+    padding: 1.8rem;
+}
+.textcols-item + .textcols-item {
+	margin-left: 4%;
+}
+
+.home-section .right {
+    padding: 1rem;
+    width: 100%;
+    height: 91rem;
+}
+
+.home-section .right > .title-text h2 {
+    font-size: 4rem;
+    padding: 1rem;
+    text-align: center;
+}
+    
+.home-section .right .special-offer {
+    padding: 0.7rem;height: 85%;
+    border: .1rem solid grey;
+    border-radius: .4rem;
+}
+
+.home-section .right .special-offer .offer .img {
+    width: 17rem;
+    height: 14rem;
+    cursor: pointer;
+}
+
+.home-section .right .special-offer .offer .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-section .right .special-offer .offer {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.home-section .right .special-offer .offer .text {
+    margin-inline: 2rem;
+}
+
+.home-section .right .special-offer .offer .text .title p {
+    font-size: 2rem;
+    text-wrap: nowrap;
+}
+
+.home-section .right .special-offer .offer .text .title p:hover {
+    text-decoration: underline;
+}
+
+/*Next section ----------------------->*/
+
+.section {
+    width: 100%;
+    height: 70vh;
+    background: #fff9f2;
+    padding: 0rem 5rem;
+    margin-top: -8rem;
+}
+
+.section .review {
+    padding: 2rem 0rem;
+}
+
+.section .review > .title h3 {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.section .review .review-block {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.section .review .review-block .review-img {
+    width: calc(100% / 4 -2rem);
+    margin: 1rem;
+}
+
+.section .review .review-block .review-img .img {
+    width: 100%;
+    height: 20rem;
+}
+
+.section .review .review-block .text {
+    padding: 1rem;
+}
+
+.section .review .review-block .text .title {
+    font-size: 1.5rem;
+    display: inline;
+    cursor: pointer;
+}
+
+.section .review .review-block .review-img .img img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}   
+
+/*Footer ---------------------->*/
+
+.footer {
+    width: 100%;
+    min-height: 20rem;
+    padding: 5rem 5rem 0rem;
+    background: rgba(160, 223, 219, 0.326);
+    box-shadow: 0 5px 16px rgb(14, 99, 94.8);
+}
+
+
+.footer .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -3rem;
+}
+
+.footer .box .name {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer .box .links h3 {
+    font-size: 2rem;
+}
+
+.footer .box .links h4 {
+    padding: .4rem;
+    margin-top: .5rem;
+}
+
+.footer .box .links h4 a {
+    font-size: 1.5rem;
+    color: rgb(14, 99, 94);
+}
+
+.footer .box .links h4 a:hover {
+    text-decoration: underline;
+}
+
+.footer .box .contacts h3 {
+    font-size: 2rem;
+}
+
+.footer .box .contacts h4 {
+    font-size: 1.5rem;
+    color: rgb(14, 99, 94);
+    padding: .4rem;
+    margin-top: .5rem;
+}
+
+.footer .box .contacts h4 a {
+    font-size: 1.5rem;
+    color: rgb(14, 99, 94);
+}
+
+.footer .box .contacts h4 a:hover {
+    text-decoration: underline;
+}
+
+
+
